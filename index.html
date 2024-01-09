@@ -1,108 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MOVIES APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1 style="background-color: black;">N.GANESH KUMAR</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am N.Ganesh Kumar, pursuing my bachelors degree in Information Technology and has a passion for web development(front-end,back-end). I have experience in designing and developing a travel blog website as a part of my project.I am proficient in C,Java,Css,HTML and Data mining techniques.I am excited to learn latest technologiesand always up for seeking new opportunities to learn and collabrate.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <h3>Travel Blog</h3>
-            <p>Introducing our curated collection of travel blogs, a meticulously crafted project designed to transport readers to the far corners of the world through the power of storytelling. Each blog within this collection serves as a unique gateway to diverse destinations, offering readers a rich tapestry of experiences, insights, and adventures. From the bustling streets of Tokyo to the serene landscapes of New Zealand, our travel blogs capture the essence of each location with unparalleled depth and authenticity. Through vibrant narratives and stunning photography, these blogs not only highlight popular landmarks but also uncover hidden treasures and local gems that often escape the casual traveler's radar.Beyond mere descriptions of places, our project aims to foster a deeper understanding and appreciation of global cultures, traditions, and lifestyles. Whether you're an armchair traveler seeking virtual escapism or a seasoned explorer scouting for your next destination, this collection promises to ignite your wanderlust and inspire your next adventure.Immerse yourself in this captivating journey around the world, as told by passionate travelers and experienced wanderers. With each blog offering a unique perspective and voice, this project is a testament to the boundless beauty and diversity our planet has to offer. Your passport to a world of discovery awaits within these pages."
-                
-                </p>
+    <div class="wrapper">
+        <header>
+            <div class="netflixLogo">
+                <a id="logo" href="#home"><img src="https://res.cloudinary.com/do4qwwms8/image/upload/v1635419613/website-logo_qwpc3c.png" alt="Logo Image" /></a>
+            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#tvShows">TV Shows</a>
+                <a href="#movies">Movies</a>
+                <a href="#originals">Originals</a>
+                <a href="#">Recently Added</a>
+            </nav>
+            <nav class="sub-nav">
+                <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+                <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+                <a href="#">Account</a>
+            </nav>
+        </header>
+    </div>
+ 
+    <div class="home-container" style="background-image: url('https://assets.ccbp.in/frontend/react-js/movies-app/avatar-theatrical-movie-background-v0.png'); background-size: cover; height: 52vh; background-repeat: no-repeat;">
+        <div class="home-movie-details-container">
+            <h1 class="home-movie-heading">Avatar</h1>
+            <p class="home-movie-description">Avatar is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron</p>
+            <button type="button" class="home-movie-play-button">
+                Play
+            </button>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email:ganeshkumarnukala@gmail.com</p>
+   
+    <section class="main-container">
+        <div class="location" id="home">
+            <h1 id="home">Popular on Movies App</h1>
+            <div class="box">
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/shang-chi-and-the-legend-of-the-ten-rings-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dune-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-suicide-squad-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/eternals-movie-poster.png" alt="" /></a>
+
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/army-of-thieves-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-harder-they-fall-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/halloween-kills-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/twilight-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/squid-game-south-korean-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-pursuit-of-happyness-movie-poster.png" alt="" /></a>
+            </div>
+        </div>
+
+        <h1 id="myList">Trending Now</h1>
+        <div class="box">
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/clifford-the-big-red-dog-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/titanic-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/avatar-theatrical-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/a-few-good-men-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/king-richard-movie-poster.png" alt="" /></a>
+        </div>
+
+        <h1 id="tvShows">TV Shows</h1>
+        <div class="box">
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dexter-new-blood-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/riverdale-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-boss-baby-family-business-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-protege-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/godzilla-vs-kong-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/demonic-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/cosmic-sin-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/infinite-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/zack-snyders-justice-league-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-tomorrow-war-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-vault-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/mortal-kombat-international-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-advance-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/gunpowder-milkshake-british-movie-poster.png" alt="" /></a>
+        </div>
+
+        <h1 id="originals">Originals</h1>
+        <div class="box">
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-far-from-home-international-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/snake-eyes-gi-joe-origins-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-addams-family-2-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/luca-movie-poster.png" alt="" /></a>
+            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-amazing-spider-man-movie-poster.png" alt="" /></a>
+        </div>
     </section>
 
     <footer>
-        <p style="background-color: black;">&copy; 2024 Ganesh </p>
+        <div class="logos">
+            <a href="https://facebook.com/tharunsaigadupudi"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+            <a href="https://github.com/tharun099"><i class="fab fa-github fa-2x logo"></i></a>
+            <a href="https://twitter.com/tharun_gadupudi"><i class="fab fa-twitter fa-2x logo"></i></a>
+        </div>
+        <p>Contact US</p>
+        <p>Help center</p>
     </footer>
 </body>
+
 </html>
-<style>
-
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f4f4f4;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-section {
-    padding: 20px;
-}
-
-.project h3 {
-    text-align: left; /* Align the heading to the left */
-}
-
-.project p {
-    text-align: left; /* Align the paragraph to the left */
-}
-
-footer {
-    background-color: #f4f4f4;
-    padding: 10px 0;
-    text-align: center;
-}
-
-</style>
